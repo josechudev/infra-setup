@@ -3,7 +3,7 @@ resource "digitalocean_droplet" "docker-dev" {
   name   = "docker-dev"
   region = "nyc1"
   size   = "s-2vcpu-4gb"
-  ssh_keys = [ "37120252", "37104898" ]
+  ssh_keys = var.ssh_keys
   monitoring = true
   user_data = file("cloud-init.yaml")
 }
