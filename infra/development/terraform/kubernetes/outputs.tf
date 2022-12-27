@@ -1,11 +1,7 @@
-output "docker_proplet_price_hourly" {
-  value = digitalocean_droplet.docker-dev.price_hourly
+output "maintenance_policy" {
+  value = digitalocean_kubernetes_cluster.kubernetes-dev.maintenance_policy
 }
 
-output "docker_proplet_price_monthly" {
-  value = digitalocean_droplet.docker-dev.price_monthly
-}
-
-output "docker_proplet_status" {
-  value = digitalocean_droplet.docker-dev.status
+output "cluster_status" {
+  value = digitalocean_kubernetes_cluster.kubernetes-dev.status
 }
