@@ -1,4 +1,4 @@
-# infra-environment
+# infra-setup
 ##  Docker droplet
 
 Run docker image with terraform
